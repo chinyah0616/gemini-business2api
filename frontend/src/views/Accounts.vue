@@ -955,7 +955,7 @@ const toggleAutoRefresh = async () => {
     } else {
       await accountsApi.pauseAutoRefresh()
       autoRefreshPaused.value = true
-      toast.warning('自动刷新已暂停（重启后恢复）')
+      toast.warning('自动刷新已暂停（重启默认关闭）')
     }
   } catch (error: any) {
     toast.error(error.message || '切换失败')
